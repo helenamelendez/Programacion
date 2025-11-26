@@ -1,3 +1,11 @@
+fun fibonacci(x: Int): Int{
+    when {
+        x == 0 -> return 0
+        x == 1 -> return 1
+        else -> return fibonacci(x-1)+fibonacci(x-2)
+    }
+}
+
 /*
 La sucesión de Fibonacci
 La sucesión de Fibonacci es la sucesión de números:
@@ -25,11 +33,3 @@ SE PIDE:  escribir un método estático en Java  llamado fibonacci()  si le pasa
 
 Aunque la solución de Fibonacci se puede obtener escribiendo un bucle, se pide en este caso que  resuelvas el ejercicio utilizando recursividad.
 */
-
-fun fibonacci(x: Int): Int{
-    when {
-        x == 0 -> return 0
-        x == 1 -> return 1
-        else -> return fibonacci(x-1)+fibonacci(x-2)
-    }
-}

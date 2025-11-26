@@ -1,3 +1,11 @@
+ fun mulRusa(x: Int, y: Int): Int{
+    return when {
+        y==1 -> x
+        y%2==0 -> mulRusa(x*2,y/2)
+        else -> x + mulRusa(x*2,y/2)
+    }
+}
+
 /*
 Ya hicimos este ejercicio con bucle. Ahora toca con recursividad.
 
@@ -31,13 +39,4 @@ Por último,  sumamos todas las filas restantes de la columna izquierda, y obten
 420 + 6720 = 7140, que es exactamente el valor de 105×68
 
 SE PIDE RESOLVER CON RECURSIVIDAD: Escribir un función recursiva mulRusa() tal y como se infiere de los casos ejemplo. Los argumentos serán números enteros mayores que cero y se garantiza que los casos de prueba enviados nunca van a generar un resultado mayor que  109.  
-
- */
-
- fun mulRusa(x: Int, y: Int): Int{
-    return when {
-        y==1 -> x
-        y%2==0 -> mulRusa(x*2,y/2)
-        else -> x + mulRusa(x*2,y/2)
-    }
-}
+*/

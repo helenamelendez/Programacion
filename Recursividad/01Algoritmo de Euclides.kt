@@ -1,3 +1,12 @@
+fun mcd(x: Int, y: Int): Int{
+    var Resto = x%y
+    if (Resto != 0) {
+        return mcd(y,Resto)
+    }
+    else return y
+
+}
+
 /*
 El algoritmo de Euclides es un procedimiento para calcular el m.c.d. (máximo común divisor) de dos números. Para  simplificar suponemos que está garantizado que los dos números son mayores que cero y que el primer parámetro es mayor o igual que el segundo, es decir, m.c.d(a,b) con a>=b>0
 
@@ -17,12 +26,3 @@ m.c.d. (72, 16) = 8
 
 SE PIDE: función mcd recursiva que  implemente el algoritmo anterior
 */
-
-fun mcd(x: Int, y: Int): Int{
-    var Resto = x%y
-    if (Resto != 0) {
-        return mcd(y,Resto)
-    }
-    else return y
-
-}
