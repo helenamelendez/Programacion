@@ -9,10 +9,15 @@
 /*
 Ya hicimos este ejercicio con bucle. Ahora toca con recursividad.
 
-Hay muchos algoritmos que permiten multiplicar dos números. Uno de ellos es el llamado método de los campesinos rusos (o simplemente, de los campesinos o Rusa). Los únicos conocimientos requeridos son saber sumar y saber dividir y multiplicar por dos.
+Hay muchos algoritmos que permiten multiplicar dos números. Uno de ellos es el llamado método de los campesinos rusos 
+(o simplemente, de los campesinos o Rusa). Los únicos conocimientos requeridos son saber sumar y saber dividir y 
+multiplicar por dos.
 
  Procedimiento:
-Se generan  dos columnas de números. Comenzamos escribiendo los dos multiplicandos al principio de sendas columnas. En la de la izquierda, iremos duplicando progresivamente el valor del número obtenido, y en la de la derecha iremos dividiendo por dos, redondeando a la baja cuando sea necesario. Cuando en la columna de la derecha lleguemos al uno, detenemos el proceso
+Se generan  dos columnas de números. Comenzamos escribiendo los dos multiplicandos al principio de sendas columnas. 
+En la de la izquierda, iremos duplicando progresivamente el valor del número obtenido, y en la de la derecha iremos 
+dividiendo por dos, redondeando a la baja cuando sea necesario. Cuando en la columna de la derecha lleguemos al uno, 
+detenemos el proceso
 Ejemplo: 105x68
 
 105 | 68
@@ -38,5 +43,7 @@ Por último,  sumamos todas las filas restantes de la columna izquierda, y obten
 
 420 + 6720 = 7140, que es exactamente el valor de 105×68
 
-SE PIDE RESOLVER CON RECURSIVIDAD: Escribir un función recursiva mulRusa() tal y como se infiere de los casos ejemplo. Los argumentos serán números enteros mayores que cero y se garantiza que los casos de prueba enviados nunca van a generar un resultado mayor que  109.  
+SE PIDE RESOLVER CON RECURSIVIDAD: Escribir un función recursiva mulRusa() tal y como se infiere de los casos ejemplo. 
+Los argumentos serán números enteros mayores que cero y se garantiza que los casos de prueba enviados nunca van a generar 
+un resultado mayor que  109.  
 */
